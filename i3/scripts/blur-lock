@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+PICTURE=~/Downloads/lock.png
+
+i3lock -i $PICTURE

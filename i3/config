@@ -35,8 +35,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-tiling_drag modifier titlebar
-
 # start a terminal in current directory
 bindsym $mod+Return exec $term --working-directory $(xcwd)
 
@@ -48,6 +46,9 @@ bindsym $mod+q kill
 
 # power menu
 bindsym $mod+0 exec ~/.config/i3/scripts/powermenu
+
+# screenshots
+bindsym Print exec flameshot gui
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun
