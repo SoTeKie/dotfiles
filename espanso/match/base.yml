@@ -20,6 +20,14 @@ matches:
         params:
           cmd: "date '+%s'"
 
+  - trigger: ":date"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "date '+%Y-%m-%d'"
+
   - trigger: ":uuid"
     replace: "{{output}}"
     vars:
